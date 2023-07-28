@@ -1,0 +1,34 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.hardware.rev.RevTouchSensor;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.hardware.TouchSensor;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+@TeleOp(name="MentorCode", group="Linear Opmode")
+public class MentorCode extends LinearOpMode {
+    // Define variables for our touch sensor and motor
+    TouchSensor touch;
+    Servo motor;
+
+    @Override
+    public void runOpMode() {
+        // Get the touch sensor and motor from hardwareMap
+
+        touch = hardwareMap.get(RevTouchSensor.class, "Touch");
+        motor = hardwareMap.servo.get("ServoMotor");
+        motor.setPosition(0);
+        
+        // Wait for the play button to be pressed
+        waitForStart();
+
+        // Your positions go here!!!
+        float[] positions = {};
+
+        // // // // // // YOUR CODE GOES BELOW HERE // // // // // //
+
+
+        // // // // // // YOUR CODE GOES ABOVE HERE // // // // // //  
+    }
+}
